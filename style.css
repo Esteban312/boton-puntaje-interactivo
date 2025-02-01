@@ -1,0 +1,165 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+
+/* ------------------------------
+   ESTILOS GENERALES (body, textos, etc.)
+   ------------------------------ */
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  color: var(--dark-blue); /* Color de texto por defecto */
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 15px;
+  color: var(--light-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--white);
+}
+
+section{
+  width: 350px;
+  height: 400px;
+  margin: auto;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+
+}
+
+section img{
+  background-color: var(--very-dark-blue);
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+}
+
+section *{
+  margin: 10px;
+}
+/* ------------------------------
+  FORMULARIO (Radio buttons y Submit)
+   ------------------------------ */
+
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 17px;
+  margin: 0 5px 20px 5px;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none; /* Evita que el texto se seleccione */
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--orange);
+  color: white;
+}
+
+label:hover {
+  background-color: hsl(25, 97%, 63%);
+}
+
+input[type="submit"] {
+  background-color: var(--orange);
+  color: var(--very-dark-blue);
+  border-style: none;
+  padding: 14px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+
+
+
+
+/* SELECCIONADO */
+
+.thankyouimg{
+  background-color: transparent ;
+  width: 190px;
+  border-radius: 0;
+
+}
+#thankyouprint{
+  align-items: center;
+  text-align: center;
+}
+
+#selectedRate{
+  background-color: var(--very-dark-blue);
+  padding: 10px;
+  color: var(--orange);
+  border-radius: 10px;
+}
+
+/* ------------------------------
+   FOOTER
+   ------------------------------ */
+
+footer {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
+
+/* ------------------------------
+   MEDIA QUERIES (Responsive)
+   ------------------------------ */
+
+/* Mobile */
+@media (max-width: 375px) {
+  /* Mobile styles */
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  /* Desktop styles */
+  body {
+    font-size: 15px;
+  }
+}
