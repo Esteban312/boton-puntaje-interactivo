@@ -8,8 +8,8 @@ Componente interactivo donde el usuario puede seleccionar una calificación del 
 
 ## Enlace
 
-- [Solución en GitHub](#)
-- [Sitio en vivo](#)
+- [Solución en GitHub](https://github.com/Esteban312/boton-puntaje-interactivo)
+- [Sitio en vivo](https://boton-interactivo-puntaje.netlify.app/)
 
 ## Tecnologías utilizadas
 
@@ -25,4 +25,4 @@ Componente interactivo donde el usuario puede seleccionar una calificación del 
 ## Autor
 
 - [Perfil de Frontend Mentor](https://www.frontendmentor.io/profile/tuusuario)
-- [Mi web personal](https://www.tusitio.com)
+- [Mi web personal](https://github.com/Esteban312)
